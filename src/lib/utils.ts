@@ -25,7 +25,7 @@ export const formSchema = z
       .number()
       .min(1, "Relevant Experience must be at least 1")
       .optional(),
-    portfolioURL: z.string().url().optional(),
+    portfolioURL: z.string().optional(),
     managementExperience: z.string().optional(),
     additionalSkills: z
       .array(z.enum(["JavaScript", "CSS", "Python", "React", "Typescript"]))
