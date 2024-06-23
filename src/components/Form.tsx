@@ -47,7 +47,7 @@ export const FormContainer = () => {
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
     console.log("Submitting with values:", values);
-    console.log("Form state:", form.formState); // Check form state for errors
+    console.log("Form state:", form.formState);
 
     if (Object.keys(form.formState.errors).length > 0) {
       Object.values(form.formState.errors).forEach((error) => {
@@ -60,6 +60,7 @@ export const FormContainer = () => {
       });
     } else {
       console.log("No errors, submitting form...");
+      localStorage.setItem("formData", JSON.stringify(values));
       navigate("/registered");
     }
   };
