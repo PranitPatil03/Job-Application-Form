@@ -254,6 +254,30 @@ export const FormContainer = () => {
               </div>
 
               <div className="w-full">
+              {form.watch("positionType") === "Manager" && (
+                  <FormField
+                    control={form.control}
+                    name="relevantExperience"
+                    render={({ field }) => (
+                      <FormItem className="w-full">
+                        <FormLabel className="flex font-mono font-bold text-lg">
+                          Relevant Experience
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            min={0}
+                            {...field}
+                            type="number"
+                            onChange={(e) =>
+                              field.onChange(parseInt(e.target.value, 10))
+                            }
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                )}
                 {form.watch("positionType") === "Manager" && (
                   <FormField
                     control={form.control}
@@ -275,6 +299,7 @@ export const FormContainer = () => {
                     )}
                   />
                 )}
+
               </div>
             </div>
           </div>
