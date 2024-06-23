@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+# Job Application Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a job application form built with React, showcasing the use of nested conditional fields, multiple field types, and enhanced validation. The form includes fields for Full Name, Email, Phone Number, Applying for Position, Relevant Experience, Portfolio URL, Management Experience, Additional Skills, and Preferred Interview Time. The form implements conditional logic to display specific fields based on the selected job position. It also includes validation to ensure all required fields are correctly filled out.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Dynamic form fields with nested conditional rendering
+- Multiple field types including text, email, number, dropdown, checkboxes, and date-time picker
+- Real-time validation of input fields
+- User-friendly interface with clear error messages
+- Display of entered data summary upon submission
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Shadcn**
+- **React Hook Forms**
+- **React Router**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Project Structure
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Main repository:** [Job-Application-Form](https://github.com/PranitPatil03/Job-Application-Form)
+
+## Deployment
+
+**Live Preview:** [https://job-application-form-xi.vercel.app/](https://job-application-form-xi.vercel.app/)
+
+## Project Setup
+
+To set up and run this project locally, follow these steps:
+
+### Prerequisites
+
+- Node.js and npm (Node Package Manager) installed on your machine
+
+### Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/PranitPatil03/Job-Application-Form.git
+   cd Job-Application-Form
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Application**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the Application in Your Browser**
+
+   Navigate to `http://localhost:5173` to see the form in action.
+
+## Contact
+
+For any queries, feel free to reach out:
+
+- **Portfolio:** [Pranit Patil](https://patilpranit.vercel.app/)
+- **Email:** patilpranit3112@gmail.com
+
+Thank you for the opportunity to work on this assignment!
