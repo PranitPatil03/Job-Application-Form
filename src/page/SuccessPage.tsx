@@ -96,12 +96,6 @@ const SuccessPage = () => {
                     <strong>Additional Skills:</strong>{" "}
                     {formData.additionalSkills.join(", ")}
                   </li>
-                  <li>
-                    <strong>Interview Date:</strong> {formData.interviewDate}
-                  </li>
-                  <li>
-                    <strong>Interview Time:</strong> {formData.interviewTime}
-                  </li>
                 </ul>
               </div>
             </div>
